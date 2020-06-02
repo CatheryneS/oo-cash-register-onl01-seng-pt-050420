@@ -1,9 +1,9 @@
 class CashRegister
   attr_accessor :total, :discount
   
-  def initialize(total = 0, discount = 20)
+  def initialize(total = 0, discount = 20.00)
     @total = total
-    @discount = discount/100
+    @discount = discount
   end
 
   def instance_variable_get(total)
@@ -15,6 +15,6 @@ class CashRegister
   end
   
   def apply_discount
-    @total = @total - (@total*@discount)
+    @total = @total - (@total*(@discount/100))
   end
 end
