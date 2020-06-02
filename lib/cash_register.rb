@@ -6,7 +6,7 @@ class CashRegister
     @discount = discount
   end
 
-  def instance_variable_get
+  def instance_variable_get(total)
     @total
   end
   
