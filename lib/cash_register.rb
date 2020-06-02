@@ -15,6 +15,6 @@ class CashRegister
   end
   
   def apply_discount
-    puts @total = @total - (@total*(@discount/100.00))
+    @total = @total - (@total*(@discount/100.00))
   end
 end
