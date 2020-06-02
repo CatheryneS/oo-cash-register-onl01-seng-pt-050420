@@ -7,7 +7,7 @@ class CashRegister
   end
 
   def instance_variable_get
-    @total = 0
+    @total
   end
   
 end
