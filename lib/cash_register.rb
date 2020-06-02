@@ -1,10 +1,6 @@
 class CashRegister
-  
-  def initialize
-    @total = 0
-  end
 
-  def instance_variable_get
+  def instance_variable_get(total)
     @total = 0
   end
   
