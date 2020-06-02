@@ -3,7 +3,7 @@ class CashRegister
   
   def initialize(total = 0, discount = 20)
     @total = total
-    @discount = discount
+    @discount = discount/100
   end
 
   def instance_variable_get(total)
